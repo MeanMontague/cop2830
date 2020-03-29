@@ -1,0 +1,52 @@
+/*
+* File Name:	confirmationStyle.css
+* Name:			Laeito Riley
+* Course:		COP 2830C at Valencia College
+* Facilitator:	David Stendel
+* Description:	AJS9a Initial Website
+* Team Members: Laeito Riley and Andres Siri
+* Date:			3/28/20
+*/
+
+/*Navigation Bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+li {
+    font-size: large;
+    float: right;
+}
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+/*ORDER CONFIRMATION*/
+.flex-container {
+    margin: 20% 20% 20% 35%;
+    display: inline-flex; /* Standard syntax */
+}
+
+.confirmation {
+    border: solid;
+    text-align: center;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    border-top-style: solid;
+}

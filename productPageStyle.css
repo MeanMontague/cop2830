@@ -1,0 +1,76 @@
+/*
+* File Name:	productPageStyle.css
+* Name:			Laeito Riley
+* Course:		COP 2830C at Valencia College
+* Facilitator:	David Stendel
+* Description:	AJS9a Initial Website
+* Team Members: Laeito Riley and Andres Siri
+* Date:			3/28/20
+*/
+
+/*Navigation Bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+li {
+    font-size: large;
+    float: right;
+}
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+/*main body column format*/
+article {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.flex-container {
+    width: initial;
+    min-height: auto;
+    margin: 0 auto;
+    display: inline-flex; /* Standard syntax */
+}
+
+    .flex-container .column {
+        padding: 10px;
+        flex: 1; /* Standard syntax */
+    }
+
+#firstColumn {
+    width: 35%;
+    height: 400px;
+}
+
+#secondColumn {
+    float: right;
+    width: 55%;
+    height: 400px;
+    border: solid;
+}
+
+#buttonContainer {
+    width: 100%;
+    text-align: center;
+}
+
+#cartButton {
+    margin: 10px;
+    font-size: 16px;
+    -webkit-appearance: none;
+    display: inline-block;
+}

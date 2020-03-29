@@ -1,0 +1,148 @@
+/*
+* File Name:	checkoutStyle.css
+* Name:			Laeito Riley
+* Course:		COP 2830C at Valencia College
+* Facilitator:	David Stendel
+* Description:	AJS9a Initial Website
+* Team Members: Laeito Riley and Andres Siri
+* Date:			3/28/20
+*/
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigation Bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+li {
+    font-size: large;
+    float: right;
+}
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+/*main body column format*/
+.flex-container {
+    width: initial;
+    min-height: auto;
+    margin: 0 auto;
+    display: inline-flex;
+}
+
+    .flex-container .column {
+        padding: 10px;
+        flex: 1;
+    }
+
+        .flex-container .column.bg-alt {
+            background: #b4bac0;
+        }
+
+
+legend {
+    font-size: 36px;
+    position: absolute;
+    padding: 10px 0;
+}
+
+input, label, select, textarea, fieldset p, div.errorMessage, #ccNumErrorMessage, #cvvErrorMessage {
+    position: relative;
+    top: 50px;
+    line-height: 1.2em;
+}
+
+label, input {
+    display: block;
+}
+
+#expMoLabel, #expYrLabel {
+    position: absolute;
+    left: -10000px;
+}
+
+#buttonContainer {
+    width: 100%;
+    text-align: center;
+}
+
+#orderButton {
+    margin: 0 auto;
+    font-size: 24px;
+    top: 15px;
+    -webkit-appearance: none;
+    display: inline-block;
+}
+
+
+fieldset {
+    position: relative;
+    padding: 5px 10px 70px 3px;
+    background: white;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+    fieldset.text label {
+        width: 8em;
+        text-align: right;
+        float: left;
+        clear: left;
+        margin-right: 20px;
+        margin-top: 5px;
+    }
+
+    fieldset.text input, fieldset.text select {
+        margin-top: 5px;
+        margin-right: 5px;
+        width: 300px;
+    }
+
+div.inline label, div.inline input, div.inline select, div.inline div {
+    display: inline-block;
+    float: none;
+    text-align: center;
+    width: auto;
+}
+
+div.inline option {
+    text-align: left;
+}
+
+#buttonContainer {
+    width: 100%;
+    text-align: center;
+}
+
+#orderButton {
+    margin: 0 auto;
+    font-size: 24px;
+    top: -10px;
+    -webkit-appearance: none;
+    display: inline-block;
+}
+
+footer ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    border-top-style: solid;
+    border-top: thin;
+}

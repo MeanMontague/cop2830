@@ -1,0 +1,120 @@
+/*
+* File Name:	cartStyle.css
+* Name:			Laeito Riley
+* Course:		COP 2830C at Valencia College
+* Facilitator:	David Stendel
+* Description:	AJS9a Initial Website
+* Team Members: Laeito Riley and Andres Siri
+* Date:			3/28/20
+*/
+
+/*Navigation Bar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+    width: 100%;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+
+li {
+    font-size: large;
+    float: right;
+}
+
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+/* main content */
+article {
+    width: 90%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+    article h2 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+/*items in cart*/
+#cart {
+    float: left;
+    width: 65%;
+    height: 280px;
+    border: solid;
+}
+
+#item_list {
+    width: 55%;
+    float: right;
+    height: 280px;
+}
+
+.flex-container {
+    width: initial;
+    min-height: auto;
+    margin: 0 auto;
+    display: inline-flex; /* Standard syntax */
+}
+
+.column {
+    padding: 10px;
+    flex: 1;
+}
+
+label {
+    position: relative;
+    width: 8em;
+    float: left;
+    clear: left;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+
+#details label {
+    padding-bottom: 80px;
+    text-align: left;
+}
+
+#detailsPartTwo label {
+    padding-bottom: 180px;
+    text-align: right;
+}
+
+/*cart price summary*/
+#cost_list {
+    text-align: center;
+    float: inherit;
+    height: 280px;
+}
+
+#order_summary {
+    float: right;
+    background: blue;
+    width: 25%;
+    height: 280px;
+    border: solid;
+}
+
+    #order_summary label {
+        text-align: center;
+        padding-bottom: 40px;
+        left: 25%;
+    }
+
+#checkoutButton {
+    margin: 0 auto;
+    font-size: 24px;
+    top: 15px;
+    -webkit-appearance: none;
+    display: inline-block;
+}

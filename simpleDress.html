@@ -1,0 +1,102 @@
+﻿<!--
+    File Name: simpleDress.html
+    Name: Laeito Riley and Anthony Rivera
+    Course:	COP 2830C at Valencia College
+    Facilitator: David Stendel
+    Description: AJS9a Initial Website
+    Team Members: Anthony Rivera, Laeito Riley, and Andres Siri
+    Date: 3/28/20
+-->
+<!--Anthony Rivera contributed to this file prior to dropping the course-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8" />
+    <title>Simple Dress</title>
+    <link href="productPageStyle.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!--NAVIGATION BAR-->
+            <ul>
+                <li><a href="AboutUs.html">About Us</a></li>
+                <li><a href="shoppingCart.html">Shopping Cart</a></li>
+                <li><a href="newsletter.html">Newsletters</a></li>
+                <li><a href="">Products</a></li>
+                <li><a href="index.html">Home</a></li>
+            </ul>
+        </nav>
+    </header>
+    <article>
+        <!--Main Page Content-->
+        <h1>A Simple Dress</h1>
+        <div class="flex-container">
+            <div id="firstColumn">
+                <!--column containing product image-->
+                <div class="ProductPicture">
+                    <img src="SimpleDress.jpg" alt="Dress" style="width:auto; height: 400px;position:center;" />
+                </div>
+            </div>
+            <div id="secondColumn">
+                <!--column containing product info and radio/dropdown selection-->
+                <div class="ProductInfo" id="productInfo">
+                    <h2>Product Name</h2>
+                    <div class="ProductDescription">
+                        <p>
+                            You know that dress your friend had that you really liked and wanted to wear out last week but she wasn't your size? This is that dress! You can have your own now, its really the same exact one except this one fits you. Guaranteed fit every time.
+                            <br>
+                            <br>
+                            Note: Dress may not fit every time. No refunds.
+                        </p>
+                    </div>
+                    <div class="Product Options">
+                        <fieldset>
+                            <!--color selection-->
+                            <legend>Color</legend>
+                            <input type="radio" id="red" value="Red" name="color" />
+                            <label for="red" id="RedLabel">Red</label>
+                            <input type="radio" id="black" value="Black" name="color" />
+                            <label for="black" id="BlackLabel">Black</label>
+                            <input type="radio" id="gold" value="Gold" name="color" />
+                            <label for="gold" id="GoldLabel">Gold</label>
+                        </fieldset>
+
+                        <fieldset>
+                            <!--size selection-->
+                            <legend>Size</legend>
+                            <input type="radio" id="small" value="Small" name="size" />
+                            <label for="small" id="SmallLabel">Small</label>
+                            <input type="radio" id="medium" value="Medium" name="size" />
+                            <label for="medium" id="MediumLabel">Medium</label>
+                            <input type="radio" id="large" value="Large" name="size" />
+                            <label for="large" id="LargeLabel">Large</label>
+                            <label for="quantity" id="quantityLabel">Quantity</label>
+
+                        </fieldset>
+                        <fieldset>
+                            <!--quantity selection-->
+                            <legend>Quantity</legend>
+                            <select id="quantity" name="Quantity" required="required">
+                                <option value="01">01</option>
+                                <option value="02">02</option>
+                                <option value="03">03</option>
+                            </select>
+                        </fieldset>
+                        <div id="buttonContainer">
+                            <!--Button that will add item to cart(potentially an array)-->
+                            <input type="submit" value="Add To Cart" id="cartButton" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </article>
+</body>
+<footer>
+    <!--Newsletter advert-->
+    <div style="text-align: left; position: fixed; bottom: 0;width: 30%">Sign Up For Our Newsletter</div>
+</footer>
+</html>

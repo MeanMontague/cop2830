@@ -1,0 +1,260 @@
+﻿<!--
+    File Name: checkout.html
+    Name: Laeito Riley
+    Course:	COP 2830C at Valencia College
+    Facilitator: David Stendel
+    Description: AJS9a Initial Website
+    Team Members: Laeito Riley and Andres Siri
+    Date: 3/28/20
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Checkout</title>
+
+    <link href="checkoutStyle.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <!--NAVIGATION BAR-->
+        <ul>
+            <li><a href="AboutUs.html">About Us</a></li>
+            <li><a href="shoppingCart.html">Shopping Cart</a></li>
+            <li><a href="newsletter.html">Newsletters</a></li>
+            <li><a href="">Products</a></li>
+            <li><a href="index.html">Home</a></li>
+        </ul>
+    </nav>
+    <article>
+        <form>
+            <fieldset id="shippingAddress" class="text">
+                <!--Shipping Address input area-->
+                <legend>Shipping Address</legend>
+                <div class="flex-container">
+                    <div class="column">
+                        <label for="shipFName">First Name</label>
+                        <input id="shipFName" name="ShippingFirstName" type="text" required="required" />
+                        <label for="shipLName">Last Name</label>
+                        <input id="shipLName" name="ShippingLastName" type="text" required="required" />
+                        <label for="shipStreet">Street Address</label>
+                        <input id="shipStreet" name="ShippingStreet" type="text" required="required" />
+                    </div>
+                    <div class="column.bg-alt">
+                        <label for="shipCity">City</label>
+                        <input id="shipCity" name="ShippingCity" type="text" required="required" />
+                        <label for="shipState">State</label>
+                        <select id="shipState" name="ShippingState" required="required">
+
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                        <label for="shipZip">Zip</label>
+                        <input id="shipZip" name="ShippingZip" type="number" required="required" />
+
+                        <label for="shipPhone">Phone</label>
+                        <input id="shipPhone" name="ShippingPhone" type="number" required="required" />
+                    </div>
+                    <div class="errorMessage"></div>
+                </div>
+            </fieldset>
+            <fieldset id="billingAddress" class="text">
+                <!--Billing Address input area-->
+                <legend>Billing Address</legend>
+                <div class="flex-container">
+                    <div class="column">
+                        <label for="billFName">First Name</label>
+                        <input id="billFName" name="BillingFirstName" type="text" required="required" />
+                        <label for="billLName">Last Name</label>
+                        <input id="billLName" name="BillingLastName" type="text" required="required" />
+                        <label for="billStreet">Street Address</label>
+                        <input id="billStreet" name="BillingStreet" type="text" required="required" />
+                    </div>
+                    <div class="column.bg-alt">
+                        <label for="billCity">City</label>
+                        <input id="billCity" name="BillingCity" type="text" required="required" />
+                        <label for="bilFlState">State</label>
+                        <select id="billState" name="BillingState" required="required">
+                            <option value="AL">AL</option>
+                            <option value="AK">AK</option>
+                            <option value="AZ">AZ</option>
+                            <option value="AR">AR</option>
+                            <option value="CA">CA</option>
+                            <option value="CO">CO</option>
+                            <option value="CT">CT</option>
+                            <option value="DE">DE</option>
+                            <option value="DC">DC</option>
+                            <option value="FL">FL</option>
+                            <option value="GA">GA</option>
+                            <option value="HI">HI</option>
+                            <option value="ID">ID</option>
+                            <option value="IL">IL</option>
+                            <option value="IN">IN</option>
+                            <option value="IA">IA</option>
+                            <option value="KS">KS</option>
+                            <option value="KY">KY</option>
+                            <option value="LA">LA</option>
+                            <option value="ME">ME</option>
+                            <option value="MD">MD</option>
+                            <option value="MA">MA</option>
+                            <option value="MI">MI</option>
+                            <option value="MN">MN</option>
+                            <option value="MS">MS</option>
+                            <option value="MO">MO</option>
+                            <option value="MT">MT</option>
+                            <option value="NE">NE</option>
+                            <option value="NV">NV</option>
+                            <option value="NH">NH</option>
+                            <option value="NJ">NJ</option>
+                            <option value="NM">NM</option>
+                            <option value="NY">NY</option>
+                            <option value="NC">NC</option>
+                            <option value="ND">ND</option>
+                            <option value="OH">OH</option>
+                            <option value="OK">OK</option>
+                            <option value="OR">OR</option>
+                            <option value="PA">PA</option>
+                            <option value="RI">RI</option>
+                            <option value="SC">SC</option>
+                            <option value="SD">SD</option>
+                            <option value="TN">TN</option>
+                            <option value="TX">TX</option>
+                            <option value="UT">UT</option>
+                            <option value="VT">VT</option>
+                            <option value="VA">VA</option>
+                            <option value="WA">WA</option>
+                            <option value="WV">WV</option>
+                            <option value="WI">WI</option>
+                            <option value="WY">WY</option>
+                        </select>
+                        <label for="billZip">Zip</label>
+                        <input id="billZip" name="BillingZip" type="number" required="required" />
+                        <label for="billPhone">Phone</label>
+                        <input id="billPhone" name="BillingPhone" type="number" required="required" />
+                    </div>
+                    <div class="errorMessage"></div>
+                </div>
+            </fieldset>
+            <fieldset id="paymentInfo" class="text">
+                <!--Payment Info input area-->
+                <legend>Payment</legend>
+                <div id="cards" class="inline">
+                    <input id="visa" name="PaymentType" type="radio" value="Visa" />
+                    <label for="visa">Visa</label>
+                    <input id="mc" name="PaymentType" type="radio" value="MC" />
+                    <label for="mc">Master Card</label>
+                    <input id="discover" name="PaymentType" type="radio" value="Discover" />
+                    <label for="discover">Discover</label>
+                    <input id="amex" name="PaymentType" type="radio" value="AmEx" />
+                    <label for="amex">American Express</label>
+                </div>
+                <div>
+                    <label for="ccNum">Card #</label>
+                    <input id="ccNum" name="CardNumber" type="number" required="required" />
+                    <div id="ccNumErrorMessage"></div>
+                </div>
+                <div>
+                    <label>Expiration</label>
+                    <div class="inline" id="exp">
+                        <label for="expMo" id="expMoLabel">Expiration Month</label>
+                        <select id="expMo" name="ExpMonth" required="required">
+                            <option value="01">01</option>
+                            <option value="02">02</option>
+                            <option value="03">03</option>
+                            <option value="04">04</option>
+                            <option value="05">05</option>
+                            <option value="06">06</option>
+                            <option value="07">07</option>
+                            <option value="08">08</option>
+                            <option value="09">09</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                        </select>
+                        <label for="expYr" id="expYrLabel">Expiration Year</label>
+                        <select id="expYr" name="ExpYear" required="required">
+                            <option value="2020">2020</option>
+                            <option value="2021">2021</option>
+                            <option value="2022">2022</option>
+                            <option value="2023">2023</option>
+                            <option value="2024">2024</option>
+                        </select>
+                    </div>
+                    <label for="cvv">CVV</label>
+                    <input id="cvv" name="CVVValue" type="number" required="required" />
+                    <div id="cvvErrorMessage"></div>
+                </div>
+                <div class="errorMessage"></div>
+            </fieldset>
+            <fieldset id="emailAddress" class="text">
+                <!--Email Address input area-->
+                <legend>Email Address</legend>
+                <label for="email">Email</label>
+                <input id="email" name="NewEmail" type="text" />
+                <div class="errorMessage"></div>
+            </fieldset>
+            <div id="buttonContainer">
+                <!--Submission Button that will lead to confirmation page-->
+                <input type="submit" value="Place Order" id="orderButton" />
+            </div>
+        </form>
+
+    </article>
+
+</body>
+<footer>
+    <!--Newsletter advert-->
+    <ul>
+        Sign Up For Our Newsletter!
+    </ul>
+</footer>
+</html>

@@ -1,0 +1,73 @@
+﻿<!--
+	File Name: shoppingCart.html
+	Name: Laeito Riley
+	Course:	COP 2830C at Valencia College
+	Facilitator: David Stendel
+	Description: AJS9a Initial Website
+	Team Members: Laeito Riley and Andres Siri
+	Date: 3/28/20
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping Cart</title>
+    <link href="cartStyle.css" rel="stylesheet">
+</head>
+<body>
+<nav><!--NAVIGATION BAR-->
+    <ul>
+        <li><a href="AboutUs.html">About Us</a></li>
+        <li><a href="shoppingCart.html">Shopping Cart</a></li>
+        <li><a href="newsletter.html">Newsletters</a></li>
+        <li><a href="Products.html">Products</a></li>
+        <li><a href="index.html">Home</a></li>
+    </ul>
+</nav>
+    <article>
+<h2>SHOPPING CART</h2>
+<div id="mainRow">
+<div id="firstColumn">
+    <div id="cart">
+        <picture><!--will be updated with image of user selection for shopping cart-->
+        <img class="responsive-image" src=""><!--IMAGE LINK-->
+        </picture>
+        <ul id="item_list">
+            <div class="flex-container">
+            <div class="column" id="details">
+                <label>Product Name</label>
+                <label>Size:</label>
+                <label>Quantity:</label>
+            </div>
+            <div class="column" id="detailsPartTwo">
+                <label>Price: $</label>
+                <label>Delete</label>
+            </div>
+
+        </div>
+        </ul>
+    </div>
+
+</div>
+
+    <div id="secondColumn">
+    <div id="order_summary"><!--will calculate cost for customer-->
+
+        <ul id="cost_list">
+        <label></label>
+        <label>Shipping:$5.00</label>
+        <label>Total:$</label>
+        <div id="buttonContainer">
+            <input type="submit" value="Checkout" id="checkoutButton" />
+        </div>
+        </ul>
+    </div>
+    </div>
+</div>
+
+</article>
+</body>
+<footer><!--Newsletter advert-->
+<div style="text-align: left; position: fixed; bottom: 0;width: 30%">Sign Up For Our Newsletter</div>
+</footer>
+</html>
